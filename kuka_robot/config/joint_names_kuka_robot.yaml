@@ -1,0 +1,68 @@
+controller_joint_names: ['', 'joint_1', 'joint_2', 'joint_3', 'joint_4', 'joint_5', 'joint_6', 'end_effector_joint','arm_joint_1','arm_joint_2','arm_joint_3', ]
+kuka_robot:
+  # default controller
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Controller 1
+  joint_1_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: joint_1 # Name of the joint.  
+    pid : {p: 100.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+
+  # Controller 2
+  joint_2_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: joint_2 # Name of the joint.  
+    pid : {p: 1000.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+
+  # Controller 3
+  joint_3_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: joint_3 # Name of the joint.  
+    pid : {p: 100.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+
+  # Controller 4
+  joint_4_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: joint_4 # Name of the joint.  
+    pid : {p: 100.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+
+  # Controller 5
+  joint_5_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: joint_5 # Name of the joint.  
+    pid : {p: 100.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+
+  # Controller 6
+  joint_6_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: joint_6 # Name of the joint.  
+    pid : {p: 100.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+  
+  # Controller end effector # To be made fixed. 
+  joint_end_effector_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: end_effector_joint # Name of the joint.  
+    pid : {p: 100.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+  
+
+  #Reduce the PID values for the following controllers
+  # Controller arm joint 1
+  joint_arm_1_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: arm_joint_1 # Name of the joint.  
+    pid : {p: 1000.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+  
+  # Controller arm joint 2
+  joint_arm_2_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: arm_joint_2 # Name of the joint.  
+    pid : {p: 1000.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
+
+  # Controller arm joint 3
+  joint_arm_3_controller:
+    type: effort_controllers/JointPositionController # Type of controller. 
+    joint: arm_joint_3 # Name of the joint.  
+    pid : {p: 1000.0 , i: 0.5 , d: 10} # Enter your pid values eg. {p: 100.0 , i: 0.0 , d: 0.0}
