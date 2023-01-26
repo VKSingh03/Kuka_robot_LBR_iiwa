@@ -3,7 +3,7 @@
 **Shantanu Parab**  |  sparab@umd.edu  
 **Vineet Singh**  | vsingh03@umd.edu  
 
-# The details of project approach and methodology used for this project can be seen from the Project report.
+# The details of project approach and methodology used can be seen from the Project report.
 
 # Kuka Robot
 ***
