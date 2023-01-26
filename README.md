@@ -1,7 +1,9 @@
 # ENPM 662: Final Project
 ### Authors:
-**Shantanu Parab**  | 119347539 |  sparab@umd.edu  
-**Vineet Singh**  | 119123614 | vsingh03@umd.edu  
+**Shantanu Parab**  |  sparab@umd.edu  
+**Vineet Singh**  | vsingh03@umd.edu  
+
+# The details of project approach and methodology used for this project can be seen from the Project report.
 
 # Kuka Robot
 ***
@@ -37,5 +39,5 @@ catkin_make
 ```
 ***
 ### Note
- The arm_control.py takes a initial setup time to compute the trajectory and joint angles using inverse kinemayics.  
+ The arm_control.py takes a initial setup time to compute the trajectory and joint angles using inverse kinematics.  
  The robot will start moving once this initial time is over.
